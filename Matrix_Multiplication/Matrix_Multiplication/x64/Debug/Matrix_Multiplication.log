@@ -1,0 +1,54 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o "C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\x64\Debug\kernel.cu.obj" "C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu" 
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(166): warning #2464-D: conversion from a string literal to "char *" is deprecated
+        print_matrices(Left_Vector_h, "Input_LHS", Left_matrix_x, Left_matrix_y, dim);
+                                      ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(167): warning #2464-D: conversion from a string literal to "char *" is deprecated
+        print_matrices(Right_Vector_h, "Input_RHS", Right_matrix_x, Right_matrix_y, dim);
+                                       ^
+  
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(220): warning #2464-D: conversion from a string literal to "char *" is deprecated
+        print_matrices(Res_h, "GPU_out", Left_matrix_x, Right_matrix_y, dim);
+                              ^
+  
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(221): warning #2464-D: conversion from a string literal to "char *" is deprecated
+        print_matrices(CPU, "CPU_out", Left_matrix_x, Right_matrix_y, dim);
+                            ^
+  
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(166): warning #2464-D: conversion from a string literal to "char *" is deprecated
+        print_matrices(Left_Vector_h, "Input_LHS", Left_matrix_x, Left_matrix_y, dim);
+                                      ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(167): warning #2464-D: conversion from a string literal to "char *" is deprecated
+        print_matrices(Right_Vector_h, "Input_RHS", Right_matrix_x, Right_matrix_y, dim);
+                                       ^
+  
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(220): warning #2464-D: conversion from a string literal to "char *" is deprecated
+        print_matrices(Res_h, "GPU_out", Left_matrix_x, Right_matrix_y, dim);
+                              ^
+  
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(221): warning #2464-D: conversion from a string literal to "char *" is deprecated
+        print_matrices(CPU, "CPU_out", Left_matrix_x, Right_matrix_y, dim);
+                            ^
+  
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(156): warning #177-D: variable "Left_vector_size" was declared but never referenced
+        int Left_matrix_x, Left_matrix_y, Right_matrix_x, Right_matrix_y, Left_vector_size, Right_vector_size;
+                                                                          ^
+  
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(156): warning #177-D: variable "Right_vector_size" was declared but never referenced
+        int Left_matrix_x, Left_matrix_y, Right_matrix_x, Right_matrix_y, Left_vector_size, Right_vector_size;
+                                                                                            ^
+  
+  kernel.cu
+  tmpxft_00000c2c_00000000-7_kernel.cudafe1.cpp
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(94): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(156): warning C4101: 'Left_vector_size': unreferenced local variable
+C:\Users\Windows 11\source\repos\Matrix_Multiplication\Matrix_Multiplication\kernel.cu(156): warning C4101: 'Right_vector_size': unreferenced local variable
+  Matrix_Multiplication.vcxproj -> C:\Users\Windows 11\source\repos\Matrix_Multiplication\x64\Debug\Matrix_Multiplication.exe

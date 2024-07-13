@@ -1,0 +1,4 @@
+﻿     Creating library C:\VIT\CAO\CUDAAAA\BFS\x64\Release\BFS.lib and object C:\VIT\CAO\CUDAAAA\BFS\x64\Release\BFS.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+  BFS.vcxproj -> C:\VIT\CAO\CUDAAAA\BFS\x64\Release\BFS.exe
